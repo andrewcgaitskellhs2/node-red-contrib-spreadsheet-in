@@ -7,7 +7,7 @@ module.exports = function(RED) {
 		node.on('input', function(msg) {
 			var msgfile = msg.payload;
 			msg.payload.sheets = msg.payload.SheetNames;
-			msg.payload.msgfile = msgfile;
+			//msg.payload.msgfile = msgfile;
 			node.send(msg);
 		});
 	}
