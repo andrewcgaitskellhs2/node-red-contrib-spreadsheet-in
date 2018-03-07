@@ -5,7 +5,7 @@ module.exports = function(RED) {
 		RED.nodes.createNode(this,config);
 		var node = this;
 		node.on('input', function(msg) {
-			msg.payload = msg.payload.Sheets;
+			msg.payload = msg.payload.SheetNames;
 			node.send(msg);
 		});
 	}
