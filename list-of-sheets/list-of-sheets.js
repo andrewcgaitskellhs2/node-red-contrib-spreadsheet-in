@@ -6,8 +6,9 @@ module.exports = function(RED) {
 		var node = this;
 		node.on('input', function(msg) {
 			var msgfile = msg.payload;
-			msg.payload = msg.payload.SheetNames;
-			node.send([msgfile,msg]);
+			msg.payload.sheets = msg.payload.SheetNames;
+			msg.payload.msgfile = msgfile;
+			node.send(msg);
 		});
 	}
 	RED.nodes.registerType("list-of-sheets",ListOfSheetsNode);
