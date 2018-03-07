@@ -8,7 +8,7 @@ module.exports = function(RED) {
 			var option = {
 				type: typeof msg.payload === "string" ? "string" : "buffer",
 				raw: false,
-				// dateNF: "yyyy-mm-dd",
+				dateNF: "yyyy-mm-dd",
 				cellDates: true,
 				password: undefined,
 				WTF: true,
