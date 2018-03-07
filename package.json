@@ -24,6 +24,7 @@
   "node-red": {
     "nodes": {
       "book": "book/book.js",
+      "list-of-sheets": "list-of-sheets/list-of-sheets.js",
       "sheet": "sheet/sheet.js",
       "cell": "cell/cell.js",
       "sheet-to-json": "sheet-to-json/sheet-to-json.js"
